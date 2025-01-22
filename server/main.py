@@ -1,7 +1,6 @@
 import os
-from admin_dash import admin_dash
-import user
 import auth
+import user
 
 def main():
     while True:
@@ -15,8 +14,8 @@ def main():
         match choice:
             case 1:
                 auth.admin_login()
-            case 2:
-                auth.user_login()
+            case 2: 
+                auth.user()
             case 0:
                 print("Session end!")
                 break
